@@ -13,6 +13,8 @@
 		766A6E5F1AAEB26C008F77B9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 766A6E5E1AAEB26C008F77B9 /* Images.xcassets */; };
 		766A6E621AAEB26C008F77B9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 766A6E601AAEB26C008F77B9 /* LaunchScreen.xib */; };
 		766A6E6E1AAEB26C008F77B9 /* SurvivalLanguageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766A6E6D1AAEB26C008F77B9 /* SurvivalLanguageTests.swift */; };
+		766A6E871AAEB44E008F77B9 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 766A6E7F1AAEB30A008F77B9 /* Alamofire.framework */; };
+		766A6E881AAEB44E008F77B9 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 766A6E7F1AAEB30A008F77B9 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,7 +25,56 @@
 			remoteGlobalIDString = 766A6E511AAEB26C008F77B9;
 			remoteInfo = SurvivalLanguage;
 		};
+		766A6E7E1AAEB30A008F77B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 766A6E771AAEB30A008F77B9 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+		766A6E801AAEB30A008F77B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 766A6E771AAEB30A008F77B9 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4DD67C0B1A5C55C900ED2280;
+			remoteInfo = "Alamofire OSX";
+		};
+		766A6E821AAEB30A008F77B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 766A6E771AAEB30A008F77B9 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS Tests";
+		};
+		766A6E841AAEB30A008F77B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 766A6E771AAEB30A008F77B9 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F829C6B21A7A94F100A2CD59;
+			remoteInfo = "Alamofire OSX Tests";
+		};
+		766A6E891AAEB44E008F77B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 766A6E771AAEB30A008F77B9 /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		766A6E8B1AAEB44E008F77B9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				766A6E881AAEB44E008F77B9 /* Alamofire.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		766A6E521AAEB26C008F77B9 /* SurvivalLanguage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SurvivalLanguage.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +87,7 @@
 		766A6E671AAEB26C008F77B9 /* SurvivalLanguageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SurvivalLanguageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		766A6E6C1AAEB26C008F77B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		766A6E6D1AAEB26C008F77B9 /* SurvivalLanguageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurvivalLanguageTests.swift; sourceTree = "<group>"; };
+		766A6E771AAEB30A008F77B9 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				766A6E871AAEB44E008F77B9 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +115,7 @@
 				766A6E541AAEB26C008F77B9 /* SurvivalLanguage */,
 				766A6E6A1AAEB26C008F77B9 /* SurvivalLanguageTests */,
 				766A6E531AAEB26C008F77B9 /* Products */,
+				766A6E771AAEB30A008F77B9 /* Alamofire.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,6 +166,17 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		766A6E781AAEB30A008F77B9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				766A6E7F1AAEB30A008F77B9 /* Alamofire.framework */,
+				766A6E811AAEB30A008F77B9 /* Alamofire.framework */,
+				766A6E831AAEB30A008F77B9 /* Alamofire iOS Tests.xctest */,
+				766A6E851AAEB30A008F77B9 /* Alamofire OSX Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,10 +187,12 @@
 				766A6E4E1AAEB26C008F77B9 /* Sources */,
 				766A6E4F1AAEB26C008F77B9 /* Frameworks */,
 				766A6E501AAEB26C008F77B9 /* Resources */,
+				766A6E8B1AAEB44E008F77B9 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				766A6E8A1AAEB44E008F77B9 /* PBXTargetDependency */,
 			);
 			name = SurvivalLanguage;
 			productName = SurvivalLanguage;
@@ -179,6 +246,12 @@
 			mainGroup = 766A6E491AAEB26C008F77B9;
 			productRefGroup = 766A6E531AAEB26C008F77B9 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 766A6E781AAEB30A008F77B9 /* Products */;
+					ProjectRef = 766A6E771AAEB30A008F77B9 /* Alamofire.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				766A6E511AAEB26C008F77B9 /* SurvivalLanguage */,
@@ -186,6 +259,37 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		766A6E7F1AAEB30A008F77B9 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 766A6E7E1AAEB30A008F77B9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		766A6E811AAEB30A008F77B9 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 766A6E801AAEB30A008F77B9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		766A6E831AAEB30A008F77B9 /* Alamofire iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire iOS Tests.xctest";
+			remoteRef = 766A6E821AAEB30A008F77B9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		766A6E851AAEB30A008F77B9 /* Alamofire OSX Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire OSX Tests.xctest";
+			remoteRef = 766A6E841AAEB30A008F77B9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		766A6E501AAEB26C008F77B9 /* Resources */ = {
@@ -232,6 +336,11 @@
 			isa = PBXTargetDependency;
 			target = 766A6E511AAEB26C008F77B9 /* SurvivalLanguage */;
 			targetProxy = 766A6E681AAEB26C008F77B9 /* PBXContainerItemProxy */;
+		};
+		766A6E8A1AAEB44E008F77B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Alamofire iOS";
+			targetProxy = 766A6E891AAEB44E008F77B9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -338,6 +447,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = SurvivalLanguage/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -348,6 +458,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = SurvivalLanguage/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -407,6 +518,7 @@
 				766A6E731AAEB26C008F77B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		766A6E741AAEB26C008F77B9 /* Build configuration list for PBXNativeTarget "SurvivalLanguageTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +527,7 @@
 				766A6E761AAEB26C008F77B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
